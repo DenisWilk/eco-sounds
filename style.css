@@ -1,0 +1,228 @@
+@font-face {
+    font-family: native;
+    src: url("./assets/fonts/native.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background-image: url("./assets/img/main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.img1 {
+    background-image: url('./assets/img/1.jpg');
+    transition: 3s;
+}
+
+.img2 {
+    background-image: url('./assets/img/2.jpg');
+    transition: 3s;
+}
+
+.img3 {
+    background-image: url('./assets/img/3.jpg');
+    transition: 3s;
+}
+
+.img4 {
+    background-image: url('./assets/img/4.jpg');
+    transition: 3s;
+}
+
+.img5 {
+    background-image: url('./assets/img/5.jpg');
+    transition: 3s;
+}
+
+.no-cursor, .no-cursor * {
+    cursor: none;
+}
+
+.header-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 60px;
+    background-color: rgb(26, 100, 122);
+    opacity: 0.7;
+}
+
+.header-container.full-screen {
+    opacity: 0;
+    transition: 5s;
+    cursor: none;
+}
+
+.player-container {
+    display: flex;
+    position: absolute;
+    left: 20px;
+    top: -70px;
+    justify-content: flex-start;
+    align-items: center; 
+}
+
+.appear-player {
+    top: 3px;
+    transition: 1.5s;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    list-style: none;
+    margin: 0;
+}
+
+.nav-btns {
+    padding: 0 10px;
+    transition: 0.1s;
+}
+
+.nav-btn {
+    width: 80px;
+    height: 35px;
+    color: rgb(122, 65, 65);
+    font-family: native;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 0;
+    border-radius: 10px;
+    color: black;
+    background: #afd8f0;
+}
+
+.nav-btn:hover {
+    background: rgb(8, 8, 8);
+    box-shadow: 0px 1px 7px 3px rgb(124, 206, 209);
+    color: beige;
+}
+
+.nav-btn:active {
+    transform: scale(1);
+    box-shadow: 0px 2px 10px 5px silver;
+    background: #87c1cf;
+    color: black;
+}
+
+.nav-btn.active {
+    color: black;
+    background: #00495c;
+}
+
+.nav-btn.active:hover {
+    background: #00495c;
+    box-shadow: none;
+    color: black;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 85px);
+}
+
+.main-btn {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+    background-image: url("./assets/svg/play4.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0;
+    opacity: 0.75;
+    filter: drop-shadow(50px 50px 55px rgb(0, 255, 0));
+    transition: 1s;
+}
+
+.no-btn {
+    opacity: 0;
+    transition: 5s;
+    cursor: none;
+}
+
+.pause-pic {
+    background-image: url("./assets/svg/pause4.svg");
+    filter: drop-shadow(50px 50px 55px rgb(255, 0, 0));
+    transition: 1s;
+
+}
+
+.appear-main-btn {
+    display: flex;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: rgb(26, 100, 122);
+    opacity: 0.7;
+}
+
+.footer-container.full-screen {
+    opacity: 0;
+    transition: 5s;
+}
+
+.footer-items {
+    display: flex;
+    align-items: center; 
+}
+
+.footer-item {
+    margin: 0;
+    padding-left: 5px;
+    font-family: natuve;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.gh-logo {
+    width: 75px;
+    height: 25px;
+    background-image: url('./assets/svg/GitHub_Logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.rss-logo {
+    width: 75px;
+    height: 25px;
+    background-image: url("./assets/svg/rs_school_js.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+
+@media (max-width: 420px) {
+    .nav-btn {
+    width: 50px;
+    height: 25px;
+    border-radius: 5px;
+    }
+}
+
+
